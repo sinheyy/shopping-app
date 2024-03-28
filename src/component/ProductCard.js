@@ -18,8 +18,8 @@ const ProductCard = ({ item }) => {
       <div className="brandname"><b>{item?.brand}</b></div>
       <div className={`pickbox${pickIsTrue ? "_switched" : ""}`}>{item?.choice == true ? "[MD PICK]" : ""}</div>
       <div className='nametext'>{item?.title}<h className='new-text'>{item?.new == true ? "NEW" : ""}</h></div>
-      <div className='price'>₩{item?.price}</div>
-      <div className='saleprice'>₩{item?.saleprice} 　　<b className='saleper'>{Math.round((item?.price - item?.saleprice) / item?.price * 100)}%</b></div>
+      <div className={`price`}>₩{item?.price}</div>
+      <div className='saleprice'><b className={'saleper'}>{Math.round((item?.price - item?.saleprice) / item?.price * 100)}%</b> ₩{item?.saleprice}</div>
 
     </div >
   )
