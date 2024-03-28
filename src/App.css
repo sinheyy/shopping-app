@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    margin-bottom: 100px;
+}
+
 .login-button {
     display: flex;
     justify-content: flex-end;
