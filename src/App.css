@@ -199,6 +199,11 @@ html{
 
 }
 
+.product-img{
+    display: flex;
+    justify-content: flex-end;
+}
+
 @font-face {
     font-family: "YeojuCeramic";
     font-weight: 50;
