@@ -8,7 +8,7 @@
             "price":218000,
             "saleprice":185300,
             "choice":false,
-            "new":true,
+            "new":false,
             "size":["one"],
             "color":["Egg Beige","Misty White","Soft Black", "Pattern Black", "Tan Brown", "Pattern Brown", "Organ Brown"]
 
@@ -34,7 +34,7 @@
             "price":42000,
             "saleprice":34314,
             "choice":true,
-            "new":true,
+            "new":false,
             "size":["one"],
             "color":["Silver","Gold Pated"]
 
@@ -47,7 +47,7 @@
             "price":48000,
             "saleprice":25520,
             "choice":false,
-            "new":true,
+            "new":false,
             "size":["F"],
             "color":["BLACK","IVORY","OATMEAL", "GRAY"]
 
@@ -73,7 +73,7 @@
             "price":89000,
             "saleprice":74404,
             "choice":false,
-            "new":true,
+            "new":false,
             "size":["XS","S","M", "L"],
             "color":["Dark navy","Sand beige","Black", "Charcoal"]
 
@@ -112,7 +112,7 @@
             "price":229000,
             "saleprice":148850,
             "choice":true,
-            "new":true,
+            "new":false,
             "size":["S","M","L"],
             "color":["BLACK","IVORY","DEEP BEIGE", "DEEP PINK"]
 
@@ -150,7 +150,7 @@
             "title":"CREA crystal",
             "price":138000,
             "saleprice":36432,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["FREE"],
             "color":["FREE"]
