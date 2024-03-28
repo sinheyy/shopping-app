@@ -7,7 +7,7 @@
             "title":"Panier Petit Bag",
             "price":218000,
             "saleprice":185300,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["one"],
             "color":["Egg Beige","Misty White","Soft Black", "Pattern Black", "Tan Brown", "Pattern Brown", "Organ Brown"]
@@ -46,7 +46,7 @@
             "title":"[4color] 스퀘어 넥 골지 니트 MDKT063",
             "price":48000,
             "saleprice":25520,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["F"],
             "color":["BLACK","IVORY","OATMEAL", "GRAY"]
@@ -59,7 +59,7 @@
             "title":"23SHANA embroidered shirt_white",
             "price":153000,
             "saleprice":94248,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["S","M"],
             "color":["WHITE"]
@@ -72,7 +72,7 @@
             "title":"SI PT 7023 Long Wide Slacks_4colors",
             "price":89000,
             "saleprice":74404,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["XS","S","M", "L"],
             "color":["Dark navy","Sand beige","Black", "Charcoal"]
@@ -98,7 +98,7 @@
             "title":"Cocktail Heart Neck Dress(3color)",
             "price":328000,
             "saleprice":293000,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["XS", "S","M","L"],
             "color":["Cream","Blue","Black"]
@@ -137,7 +137,7 @@
             "title":"LETTRE CARD WALLET_4color",
             "price":99000,
             "saleprice":99000,
-            "choice":true,
+            "choice":false,
             "new":true,
             "size":["one"],
             "color":["OATMEAL", "SILVER", "NOIR", "ROSE"]

@@ -64,6 +64,8 @@
     min-width: 0;
     position: relative;
     margin-top: 50px;
+    font-family: 'GmarketSansMedium';
+    font-size: 0.7rem;
 }
 
 .product-card:hover {
