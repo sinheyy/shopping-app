@@ -2,142 +2,184 @@
     "products":[
         {
             "id":0,
-            "img":"https://noona-hnm.netlify.app/pattern-jacket.jpeg",
-            "title":"벨티드 트윌 코트",
-            "price":99900,
+            "brand":"Atelier de LUMEN",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/91/301756891_LA84516.jpg",
+            "title":"Panier Petit Bag",
+            "price":218000,
+            "saleprice":185300,
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["one"],
+            "color":["Egg Beige","Misty White","Soft Black", "Pattern Black", "Tan Brown", "Pattern Brown", "Organ Brown"]
 
         },
         {
             "id":1,
-            "img":"https://noona-hnm.netlify.app/ankle-jeans.jpeg",
-            "title":"슬림핏 맘 하이웨이스트 앵클 진",
-            "price":29900,
+            "brand":"TATIANA",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/33/302766533_GJ48732.jpg",
+            "title":"(실버925) 드롭 후프 귀걸이 EC3000 (S/M/L)",
+            "price":42000,
+            "saleprice":21672,
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "color":["Silver","Gold Pated"]
 
         },
         {
             "id":2,
-            "img":"https://noona-hnm.netlify.app/wide-jeans.jpeg",
-            "title":"와이드 하이웨이스트 진",
-            "price":39900,
-            "choice":false,
+            "brand":"TATIANA",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/41/301085141_YR92430.jpg",
+            "title":"Petit oval pearl necklace_NZ1099",
+            "price":42000,
+            "saleprice":34314,
+            "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["one"],
+            "color":["Silver","Gold Pated"]
 
         },
         {
             "id":3,
-            "img":"https://noona-hnm.netlify.app/cottom-dress.jpeg",
-            "title":"퍼프 슬리브 드레스",
-            "price":39900,
-            "choice":false,
+            "brand":"MONGDOL",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/04/303355804_YB64528.jpg",
+            "title":"[4color] 스퀘어 넥 골지 니트 MDKT063",
+            "price":48000,
+            "saleprice":25520,
+            "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["F"],
+            "color":["BLACK","IVORY","OATMEAL", "GRAY"]
 
         },
         {
             "id":4,
-            "img":"https://noona-hnm.netlify.app/shirt-dress.jpeg",
-            "title":"프릴 디테일 드레스",
-            "price":29900,
+            "brand":"LENINA",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/13/302212213_VM62067.jpg",
+            "title":"23SHANA embroidered shirt_white",
+            "price":153000,
+            "saleprice":94248,
             "choice":true,
-            "new":false,
-            "size":["S","M","L"]
+            "new":true,
+            "size":["S","M"],
+            "color":["WHITE"]
 
         },
         {
             "id":5,
-            "img":"https://noona-hnm.netlify.app/flare-dress.jpeg",
-            "title":"시퀸 플레어 드레스",
-            "price":39900,
-            "choice":false,
-            "new":false,
-            "size":["S","M","L"]
+            "brand":"Siyazu",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/86/301287086_MW98402.jpg",
+            "title":"SI PT 7023 Long Wide Slacks_4colors",
+            "price":89000,
+            "saleprice":74404,
+            "choice":true,
+            "new":true,
+            "size":["XS","S","M", "L"],
+            "color":["Dark navy","Sand beige","Black", "Charcoal"]
 
         },
         {
             "id":6,
-            "img":"https://noona-hnm.netlify.app/single-jacket.jpeg",
-            "title":"더블 브레스티드 재킷",
-            "price":39900,
+            "brand":"LOOKAST",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/14/301459314_GM18079.jpg",
+            "title":"베카 트위드 자켓 / BECCA TWEED JACKET_4colors",
+            "price":228000,
+            "saleprice":180576,
             "choice":true,
-            "new":false,
-            "size":["S","M","L"]
+            "new":true,
+            "size":["S","M"],
+            "color":["PINK","BLUE","BLACK", "IVORY"]
 
         },
         {
             "id":7,
-            "img":"https://noona-hnm.netlify.app/oversize-hoodie.jpeg",
-            "title":"오버사이즈 집업 후디",
-            "price":99900,
-            "choice":false,
+            "brand":"FLOWOOM",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/02/303195102_PP71232.jpg",
+            "title":"Cocktail Heart Neck Dress(3color)",
+            "price":328000,
+            "saleprice":293000,
+            "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["XS", "S","M","L"],
+            "color":["Cream","Blue","Black"]
 
         },
         {
             "id":8,
-            "img":"https://noona-hnm.netlify.app/track-jacket.jpeg",
-            "title":"아플리케 트랙 재킷",
-            "price":14900,
+            "brand":"MOL:pin",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/21/300733521_KL48425.jpg",
+            "title":"Fluffy And Flat On The Back Strap P9020_4COLOR",
+            "price":229000,
+            "saleprice":148850,
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "color":["BLACK","IVORY","DEEP BEIGE", "DEEP PINK"]
 
         },
         {
             "id":9,
-            "img":"https://noona-hnm.netlify.app/design-hoodie.jpeg",
-            "title":"프린트 후디",
-            "price":19900,
-            "choice":false,
+            "brand":"demeriel",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/00/301265900_PO63594.jpg",
+            "title":"Bowling Bag Medium_3Colors",
+            "price":228000,
+            "saleprice":168264,
+            "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["one"],
+            "color":["Silver", "Tan Brown", "Light Beige"]
 
         },
         {
             "id":10,
-            "img":"https://noona-hnm.netlify.app/regular-wide-jeans.jpeg",
-            "title":"와이드 트윌 팬츠",
-            "price":19900,
+            "brand":"LOEUVRE",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/76/303431176_IN49384.jpg",
+            "title":"LETTRE CARD WALLET_4color",
+            "price":99000,
+            "saleprice":99000,
             "choice":true,
-            "new":false,
-            "size":["S","M","L"]
+            "new":true,
+            "size":["one"],
+            "color":["OATMEAL", "SILVER", "NOIR", "ROSE"]
 
         },
         {
             "id":11,
-            "img":"https://noona-hnm.netlify.app/high-jeans.jpeg",
-            "title":"플레어 로라이즈 진",
-            "price":29900,
+            "brand":"BLUE ELEPHANT",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/18/302325918_FG31898.jpg",
+            "title":"CREA crystal",
+            "price":138000,
+            "saleprice":36432,
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["FREE"],
+            "color":["FREE"]
 
         },
         {
             "id":12,
-            "img":"https://noona-hnm.netlify.app/mash-dress.jpeg",
-            "title":"셔링 메쉬 드레스",
-            "price":14900,
+            "brand":"ALLINCOMPLETE",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/86/301628486_OY21856.jpg",
+            "title":"[단독] Round Logo Ball Cap (10 Colors)",
+            "price":99900,
+            "saleprice":21672,
             "choice":true,
             "new":true,
-            "size":["S","M","L"]
+            "size":["one"],
+            "color":["Dark Blue Denim", "Purple", "Light Blue Denim", " White", "Green", "Blue", "Cherry Blossom"]
 
         },
         {
             "id":13,
-            "img":"https://noona-hnm.netlify.app/sweat-shirt.jpeg",
-            "title":"스웨트셔츠",
-            "price":29900,
-            "choice":false,
-            "new":false,
-            "size":["S","M","L"]
+            "brand":"Ofra",
+            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/30/305159630_HG79861.jpg",
+            "title":"미니 하이라이터 - 클라우드9",
+            "price":33000,
+            "saleprice":33000,
+            "choice":true,
+            "new":true,
+            "size":["one"],
+            "color":["one"]
 
         }
     ]

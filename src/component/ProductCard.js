@@ -1,12 +1,22 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const ProductCard = () => {
+const ProductCard = ({ item }) => {
+  const navigate = useNavigate();
+
+  const showDetail = () => {
+    navigate(`/product/${item.id}`);
+  }
+
   return (
-    <div>
-      <img src="https://lp2.hm.com/hmgoepprod?set=source[/09/a8/09a873e30151d70e02cfa923e3392fe52ea807b8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[3]&call=url[file:/product/main]"/>
-      <div>벨티드 트윌 코트</div>
-      <div>₩99900</div>
-      <div>NEW</div>
+    <div className='product-card' onClick={showDetail}>
+      <img src={item?.img} />
+      <div>{item?.brand}</div>
+      <div>{item?.choice == true ? "PICK" : ""}</div>
+      <div>{item?.title}</div>
+      <div className='price'>₩{item?.price}</div>
+      <div className='saleprice'>₩{item?.saleprice} <b className='saleper'>{Math.round((item?.price - item?.saleprice) / item?.price * 100)}%</b></div>
+      <div>{item?.new == true ? "NEW" : ""}</div>
     </div>
   )
 }
