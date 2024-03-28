@@ -58,18 +58,36 @@
 .product-card {
     word-wrap: break-word;
     background-clip: border-box;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     min-width: 0;
     position: relative;
     margin-top: 50px;
     font-family: 'GmarketSansMedium';
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .product-card:hover {
     transform: scale(1.1);
+}
+
+.brandname {
+    font-family: 'SUIT-Regular';
+    font-size: 0.9rem;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+.new-text {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    animation: blink-effect 1s step-end infinite;
+    font-size: 0.5rem;
 }
 
 .login-text {
@@ -135,7 +153,7 @@
     font-family: 'GmarketSansMedium';
 }
 
-.login-click:hover{
+.login-click:hover {
     border-radius: 5rem;
     box-shadow: 2px 2px 5px #848484;
 }
@@ -143,14 +161,37 @@
 .price {
     color: #848484;
     text-decoration: line-through;
+    font-size: 0.6rem;
+}
+
+.pickbox {
+    background-color: white;
+    width: fit-content;
+    
+    padding:2px;
+    font-size: 0.45rem;
+}
+
+.pickbox_switched{
+    background-color: #FB6D33;
+    width: fit-content;
+    color: white;
+}
+
+
+.nametext {
+    color: #555555;
+    margin: 3px;
 }
 
 .saleprice {
     color: black;
+    font-size: 0.9rem;
 }
 
 .saleper {
     color: #FA5500;
+
 }
 
 @font-face {
