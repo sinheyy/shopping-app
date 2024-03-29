@@ -1,186 +1,273 @@
 {
-    "products":[
+    "products": [
         {
-            "id":0,
-            "brand":"Atelier de LUMEN",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/91/301756891_LA84516.jpg",
-            "title":"Panier Petit Bag",
-            "price":218000,
-            "saleprice":185300,
-            "choice":false,
-            "new":false,
-            "size":["one"],
-            "color":["Egg Beige","Misty White","Soft Black", "Pattern Black", "Tan Brown", "Pattern Brown", "Organ Brown"]
-
+            "id": 0,
+            "brand": "Atelier de LUMEN",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/91/301756891_LA84516.jpg",
+            "title": "Panier Petit Bag",
+            "price": 218000,
+            "saleprice": 185300,
+            "choice": false,
+            "new": false,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "Egg Beige",
+                "Misty White",
+                "Soft Black",
+                "Pattern Black",
+                "Tan Brown",
+                "Pattern Brown",
+                "Organ Brown"
+            ]
         },
         {
-            "id":1,
-            "brand":"TATIANA",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/33/302766533_GJ48732.jpg",
-            "title":"(실버925) 드롭 후프 귀걸이 EC3000 (S/M/L)",
-            "price":42000,
-            "saleprice":21672,
-            "choice":true,
-            "new":true,
-            "size":["S","M","L"],
-            "color":["Silver","Gold Pated"]
-
+            "id": 1,
+            "brand": "TATIANA",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/33/302766533_GJ48732.jpg",
+            "title": "(실버925) 드롭 후프 귀걸이 EC3000 (S/M/L)",
+            "price": 42000,
+            "saleprice": 21672,
+            "choice": true,
+            "new": true,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "color": [
+                "Silver",
+                "Gold Pated"
+            ]
         },
         {
-            "id":2,
-            "brand":"TATIANA",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/41/301085141_YR92430.jpg",
-            "title":"Petit oval pearl necklace_NZ1099",
-            "price":42000,
-            "saleprice":34314,
-            "choice":true,
-            "new":false,
-            "size":["one"],
-            "color":["Silver","Gold Pated"]
-
+            "id": 2,
+            "brand": "TATIANA",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/41/301085141_YR92430.jpg",
+            "title": "Petit oval pearl necklace_NZ1099",
+            "price": 42000,
+            "saleprice": 34314,
+            "choice": true,
+            "new": false,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "Silver",
+                "Gold Pated"
+            ]
         },
         {
-            "id":3,
-            "brand":"MONGDOL",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/04/303355804_YB64528.jpg",
-            "title":"[4color] 스퀘어 넥 골지 니트 MDKT063",
-            "price":48000,
-            "saleprice":25520,
-            "choice":false,
-            "new":false,
-            "size":["F"],
-            "color":["BLACK","IVORY","OATMEAL", "GRAY"]
-
+            "id": 3,
+            "brand": "MONGDOL",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/04/303355804_YB64528.jpg",
+            "title": "[4color] 스퀘어 넥 골지 니트 MDKT063",
+            "price": 48000,
+            "saleprice": 25520,
+            "choice": false,
+            "new": false,
+            "size": [
+                "F"
+            ],
+            "color": [
+                "BLACK",
+                "IVORY",
+                "OATMEAL",
+                "GRAY"
+            ]
         },
         {
-            "id":4,
-            "brand":"LENINA",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/13/302212213_VM62067.jpg",
-            "title":"23SHANA embroidered shirt_white",
-            "price":153000,
-            "saleprice":94248,
-            "choice":false,
-            "new":true,
-            "size":["S","M"],
-            "color":["WHITE"]
-
+            "id": 4,
+            "brand": "LENINA",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/13/302212213_VM62067.jpg",
+            "title": "23SHANA embroidered shirt_white",
+            "price": 153000,
+            "saleprice": 94248,
+            "choice": false,
+            "new": true,
+            "size": [
+                "S",
+                "M"
+            ],
+            "color": [
+                "WHITE"
+            ]
         },
         {
-            "id":5,
-            "brand":"Siyazu",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/86/301287086_MW98402.jpg",
-            "title":"SI PT 7023 Long Wide Slacks_4colors",
-            "price":89000,
-            "saleprice":74404,
-            "choice":false,
-            "new":false,
-            "size":["XS","S","M", "L"],
-            "color":["Dark navy","Sand beige","Black", "Charcoal"]
-
+            "id": 5,
+            "brand": "Siyazu",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/86/301287086_MW98402.jpg",
+            "title": "SI PT 7023 Long Wide Slacks_4colors",
+            "price": 89000,
+            "saleprice": 74404,
+            "choice": false,
+            "new": false,
+            "size": [
+                "XS",
+                "S",
+                "M",
+                "L"
+            ],
+            "color": [
+                "Dark navy",
+                "Sand beige",
+                "Black",
+                "Charcoal"
+            ]
         },
         {
-            "id":6,
-            "brand":"LOOKAST",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/14/301459314_GM18079.jpg",
-            "title":"베카 트위드 자켓 / BECCA TWEED JACKET_4colors",
-            "price":228000,
-            "saleprice":180576,
-            "choice":true,
-            "new":true,
-            "size":["S","M"],
-            "color":["PINK","BLUE","BLACK", "IVORY"]
-
+            "id": 6,
+            "brand": "LOOKAST",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/14/301459314_GM18079.jpg",
+            "title": "베카 트위드 자켓 / BECCA TWEED JACKET_4colors",
+            "price": 228000,
+            "saleprice": 180576,
+            "choice": true,
+            "new": true,
+            "size": [
+                "S",
+                "M"
+            ],
+            "color": [
+                "PINK",
+                "BLUE",
+                "BLACK",
+                "IVORY"
+            ]
         },
         {
-            "id":7,
-            "brand":"FLOWOOM",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/02/303195102_PP71232.jpg",
-            "title":"Cocktail Heart Neck Dress(3color)",
-            "price":328000,
-            "saleprice":293000,
-            "choice":false,
-            "new":true,
-            "size":["XS", "S","M","L"],
-            "color":["Cream","Blue","Black"]
-
+            "id": 7,
+            "brand": "FLOWOOM",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/02/303195102_PP71232.jpg",
+            "title": "Cocktail Heart Neck Dress(3color)",
+            "price": 328000,
+            "saleprice": 293000,
+            "choice": false,
+            "new": true,
+            "size": [
+                "XS",
+                "S",
+                "M",
+                "L"
+            ],
+            "color": [
+                "Cream",
+                "Blue",
+                "Black"
+            ]
         },
         {
-            "id":8,
-            "brand":"MOL:pin",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/21/300733521_KL48425.jpg",
-            "title":"Fluffy And Flat On The Back Strap P9020_4COLOR",
-            "price":229000,
-            "saleprice":148850,
-            "choice":true,
-            "new":false,
-            "size":["S","M","L"],
-            "color":["BLACK","IVORY","DEEP BEIGE", "DEEP PINK"]
-
+            "id": 8,
+            "brand": "MOL:pin",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/21/300733521_KL48425.jpg",
+            "title": "Fluffy And Flat On The Back Strap P9020_4COLOR",
+            "price": 229000,
+            "saleprice": 148850,
+            "choice": true,
+            "new": false,
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "color": [
+                "BLACK",
+                "IVORY",
+                "DEEP BEIGE",
+                "DEEP PINK"
+            ]
         },
         {
-            "id":9,
-            "brand":"demeriel",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/00/301265900_PO63594.jpg",
-            "title":"Bowling Bag Medium_3Colors",
-            "price":228000,
-            "saleprice":168264,
-            "choice":true,
-            "new":true,
-            "size":["one"],
-            "color":["Silver", "Tan Brown", "Light Beige"]
-
+            "id": 9,
+            "brand": "demeriel",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/00/301265900_PO63594.jpg",
+            "title": "Bowling Bag Medium_3Colors",
+            "price": 228000,
+            "saleprice": 168264,
+            "choice": true,
+            "new": true,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "Silver",
+                "Tan Brown",
+                "Light Beige"
+            ]
         },
         {
-            "id":10,
-            "brand":"LOEUVRE",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/76/303431176_IN49384.jpg",
-            "title":"LETTRE CARD WALLET_4color",
-            "price":99000,
-            "saleprice":99000,
-            "choice":false,
-            "new":true,
-            "size":["one"],
-            "color":["OATMEAL", "SILVER", "NOIR", "ROSE"]
-
+            "id": 10,
+            "brand": "LOEUVRE",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/76/303431176_IN49384.jpg",
+            "title": "LETTRE CARD WALLET_4color",
+            "price": 99000,
+            "saleprice": 99000,
+            "choice": false,
+            "new": true,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "OATMEAL",
+                "SILVER",
+                "NOIR",
+                "ROSE"
+            ]
         },
         {
-            "id":11,
-            "brand":"BLUE ELEPHANT",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/18/302325918_FG31898.jpg",
-            "title":"CREA crystal",
-            "price":138000,
-            "saleprice":36432,
-            "choice":false,
-            "new":true,
-            "size":["FREE"],
-            "color":["FREE"]
-
+            "id": 11,
+            "brand": "BLUE ELEPHANT",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/18/302325918_FG31898.jpg",
+            "title": "CREA crystal",
+            "price": 138000,
+            "saleprice": 36432,
+            "choice": false,
+            "new": true,
+            "size": [
+                "FREE"
+            ],
+            "color": [
+                "FREE"
+            ]
         },
         {
-            "id":12,
-            "brand":"ALLINCOMPLETE",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/86/301628486_OY21856.jpg",
-            "title":"[단독] Round Logo Ball Cap (10 Colors)",
-            "price":39900,
-            "saleprice":21672,
-            "choice":true,
-            "new":true,
-            "size":["one"],
-            "color":["Dark Blue Denim", "Purple", "Light Blue Denim", " White", "Green", "Blue", "Cherry Blossom"]
-
+            "id": 12,
+            "brand": "ALLINCOMPLETE",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/86/301628486_OY21856.jpg",
+            "title": "[단독] Round Logo Ball Cap (10 Colors)",
+            "price": 39900,
+            "saleprice": 21672,
+            "choice": true,
+            "new": true,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "Dark Blue Denim",
+                "Purple",
+                "Light Blue Denim",
+                " White",
+                "Green",
+                "Blue",
+                "Cherry Blossom"
+            ]
         },
         {
-            "id":13,
-            "brand":"Ofra",
-            "img":"https://product-image.wconcept.co.kr/productimg/image/img0/30/305159630_HG79861.jpg",
-            "title":"미니 하이라이터 - 클라우드9",
-            "price":33000,
-            "saleprice":33000,
-            "choice":true,
-            "new":true,
-            "size":["one"],
-            "color":["one"]
-
+            "id": 13,
+            "brand": "Ofra",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/30/305159630_HG79861.jpg",
+            "title": "미니 하이라이터 - 클라우드9",
+            "price": 33000,
+            "saleprice": 33000,
+            "choice": true,
+            "new": true,
+            "size": [
+                "one"
+            ],
+            "color": [
+                "one"
+            ]
         }
     ]
 }

@@ -277,7 +277,7 @@
     font-family: "GmarketSansMedium";
 }
 
-.footer ul li{
+.footer ul li {
     padding: 10px;
     cursor: pointer;
 }
@@ -289,13 +289,107 @@
     margin-bottom: 100px;
 }
 
-.footer-text{
+.footer-text {
     display: flex;
     justify-content: center;
 }
 
-/* 모바일 css 지정 */
-@media screen and (max-width: 768px) {}
+.detail-product {
+    font-family: 'SUIT-Regular';
+}
+
+.detail-product-brand {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.detail-product-title {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.detail-product-star {
+    color: #FA5500;
+    margin: 5px;
+}
+
+.detail-product-price {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.detail-product-price h {
+    font-size: 1rem;
+    color: #848484;
+    text-decoration: line-through;
+    margin: 5px;
+}
+
+.detail-product-saleprice {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.detail-product-saleprice b {
+    margin: 5px;
+}
+
+.detail-product-saleper {
+    color: #FA5500;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.buy-click {
+    width: 10rem;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: 'GmarketSansMedium';
+}
+
+.buy-click:hover {
+    border-radius: 5rem;
+    box-shadow: 2px 2px 5px #848484;
+}
+
+.cart-click {
+    width: 10rem;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: 'GmarketSansMedium';
+}
+
+.cart-click:hover {
+    border-radius: 5rem;
+    box-shadow: 2px 2px 5px #848484;
+}
+
+.detail-product-new {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    animation: blink-effect 1s step-end infinite;
+    font-size: 0.7rem;
+}
+
+.product-detail-ex {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 @font-face {
     font-family: "YeojuCeramic";
