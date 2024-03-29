@@ -60,7 +60,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                 isMobile ?
                     (
                         <div className='mobile-nav-section'>
-                            <Link to="/"><img className="mobile-logo" src="/shop_logo.png" /></Link>
+                            <Link to="/"><img className="mobile-logo" src="/shop_logo_mobile.png" /></Link>
                             <div className='mobile-search-box'>
                                 <input type="text" onKeyPress={(event) => (search(event))} />
                                 <FontAwesomeIcon icon={faSearch} />
