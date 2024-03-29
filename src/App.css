@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     margin-bottom: 100px;
 }
 
@@ -20,14 +20,6 @@ html{
     justify-content: center;
 }
 
-.menu-list {
-    display: flex;
-    list-style-type: none;
-}
-
-.menu-list li {
-    padding: 10px;
-}
 
 .menu-area {
     display: flex;
@@ -37,6 +29,46 @@ html{
     font-size: 1rem;
 }
 
+.menu-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    color: #848484;
+}
+
+.hamburger-menu {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.mobile-menu-list {
+    font-family: "YeojuCeramic";
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+.mobile-menu-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mobile-menu-list li:hover {
+    color: #848484;
+}
+
+.mobile-menu-x {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+}
 
 .search-box {
     width: 30rem;
@@ -171,12 +203,12 @@ html{
 .pickbox {
     background-color: white;
     width: fit-content;
-    
-    padding:2px;
+
+    padding: 2px;
     font-size: 0.45rem;
 }
 
-.pickbox_switched{
+.pickbox_switched {
     background-color: #FB6D33;
     width: fit-content;
     color: white;
@@ -199,10 +231,13 @@ html{
 
 }
 
-.product-img{
+.product-img {
     display: flex;
     justify-content: flex-end;
 }
+
+/* 모바일 css 지정 */
+@media screen and (max-width: 768px) {}
 
 @font-face {
     font-family: "YeojuCeramic";

@@ -1,40 +1,102 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({ authenticate, setAuthenticate }) => {
     const menuList = ['WOMEN', 'MEN', 'BEAUTY', 'LIFE', 'BEST', 'SALE', 'NEW', 'EXCLUSIVE', 'EVENT'];
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [menuOpen, setMenuOpen] = useState(false);
 
+    // 로그인으로 이동
     const goToLogin = () => {
         navigate("/login");
+    }
+
+    // search-box에서 enter key 누를 시 search
+    const search = (event) => {
+        if (event.key === "Enter") {
+            // 입력한 검색어를 읽어옴
+            let keyword = event.target.value;
+            console.log("keyword", keyword);
+
+            // url을 바꿔줌 - url 뒤에 파라미터만 추가
+            navigate(`/?q=${keyword}`);
+        }
+    }
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const handleMenuToggle = () => {
+        setMenuOpen((prevMenuOpen) => !prevMenuOpen);
     }
 
     return (
         <div>
             <div>
-                <div className='login-button' onClick={goToLogin}>
-                    <FontAwesomeIcon icon={faUser} />
-                    <div>　로그인</div>
-                </div>
+                {authenticate ?
+                    (<div className='login-button' onClick={() => setAuthenticate(false)}>
+                        <FontAwesomeIcon icon={faUser} />
+                        <div>로그아웃</div>
+                    </div>)
+                    :
+                    (<div className='login-button' onClick={goToLogin}>
+                        <FontAwesomeIcon icon={faUser} />
+                        <div>로그인</div>
+                    </div>)
+                }
             </div>
             <div className='nav-section'>
                 <Link to="/"><img width={300} src="/shop_logo.png" /></Link>
                 <div className='search-box'>
-                    <input type="text" />
+                    <input type="text" onKeyPress={(event) => (search(event))} />
                     <FontAwesomeIcon icon={faSearch} />
                 </div>
             </div>
-            <div className='menu-area'>
-                <ul className='menu-list'>
-                    {menuList.map((menu) => (
-                        <li>{menu}</li>
-                    ))}
-                </ul>
+            {/* 모바일 반응형 웹을 만들어보자 */}
+            {
+                isMobile ?
+                    (<div className='hamburger-menu' onClick={handleMenuToggle}>
+                        <FontAwesomeIcon icon={faBars} style={{ color: "#000000", }} size="2x" />
+                    </div>)
+                    :
+                    (<div className='menu-area'>
+                        <ul className='menu-list'>
+                            {menuList.map((menu) => (
+                                <li>{menu}</li>
+                            ))}
+                        </ul>
+                    </div>)
+            }
+            {
+                isMobile && menuOpen && (
+                    <div>
+                        <div>
+                            <button className='mobile-menu-x' onClick={() => (setMenuOpen(false))}>
+                                <FontAwesomeIcon icon={faXmark} style={{ color: "#000000", }} size="2x" />
+                            </button>
+                        </div>
+                        <div>
+                            <ul className='mobile-menu-list'>
+                                {menuList.map((menu) => (
+                                    <li>{menu}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                )
+            }
 
-            </div>
         </div>
     )
 }
