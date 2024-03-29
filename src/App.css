@@ -20,6 +20,54 @@ html {
     justify-content: center;
 }
 
+.search-box {
+    width: 30rem;
+    height: 3rem;
+    margin: 0px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-box input {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    width: 30rem;
+    font-family: 'SUIT-Regular';
+}
+
+.mobile-nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-logo{
+    height:3rem;
+}
+
+.mobile-search-box{
+    width: 15rem;
+    height: 3rem;
+    margin: 0px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobile-search-box input{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    width: 12rem;
+    font-family: 'SUIT-Regular';
+}
 
 .menu-area {
     display: flex;
@@ -68,27 +116,6 @@ html {
     background-color: transparent;
     position: absolute;
     right: 20px;
-}
-
-.search-box {
-    width: 30rem;
-    height: 3rem;
-    margin: 0px;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 10rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.search-box input {
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
-    width: 30rem;
-    font-family: 'SUIT-Regular';
 }
 
 .product-card {

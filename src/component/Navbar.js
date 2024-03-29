@@ -56,27 +56,47 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                     </div>)
                 }
             </div>
-            <div className='nav-section'>
-                <Link to="/"><img width={300} src="/shop_logo.png" /></Link>
-                <div className='search-box'>
-                    <input type="text" onKeyPress={(event) => (search(event))} />
-                    <FontAwesomeIcon icon={faSearch} />
-                </div>
-            </div>
+            {
+                isMobile ?
+                    (
+                        <div className='mobile-nav-section'>
+                            <Link to="/"><img className="mobile-logo" src="/shop_logo.png" /></Link>
+                            <div className='mobile-search-box'>
+                                <input type="text" onKeyPress={(event) => (search(event))} />
+                                <FontAwesomeIcon icon={faSearch} />
+                            </div>
+                        </div>
+                    )
+                    :
+                    (
+                        <div className='nav-section'>
+                            <Link to="/"><img width={300} src="/shop_logo.png" /></Link>
+                            <div className='search-box'>
+                                <input type="text" onKeyPress={(event) => (search(event))} />
+                                <FontAwesomeIcon icon={faSearch} />
+                            </div>
+                        </div>
+                    )
+            }
+
             {/* 모바일 반응형 웹을 만들어보자 */}
             {
                 isMobile ?
-                    (<div className='hamburger-menu' onClick={handleMenuToggle}>
-                        <FontAwesomeIcon icon={faBars} style={{ color: "#000000", }} size="2x" />
-                    </div>)
+                    (
+                        <div className='hamburger-menu' onClick={handleMenuToggle}>
+                            <FontAwesomeIcon icon={faBars} style={{ color: "#000000", }} size="2x" />
+                        </div>
+                    )
                     :
-                    (<div className='menu-area'>
-                        <ul className='menu-list'>
-                            {menuList.map((menu) => (
-                                <li>{menu}</li>
-                            ))}
-                        </ul>
-                    </div>)
+                    (
+                        <div className='menu-area'>
+                            <ul className='menu-list'>
+                                {menuList.map((menu) => (
+                                    <li>{menu}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )
             }
             {
                 isMobile && menuOpen && (
