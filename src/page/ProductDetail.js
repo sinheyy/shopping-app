@@ -37,7 +37,7 @@ const ProductDetail = () => {
           <div><h className='detail-product-star'><b> ★★★★☆ </b></h><h><b> 4.5 </b></h><h><u> 2,022개 리뷰 </u></h></div>
           <div className='detail-product-price'>정상가<h> {product?.price} 원 </h></div>
           <div className='detail-product-saleprice'>할인가<b> {product?.saleprice} </b>원 <b className='detail-product-saleper'>{Math.round((product?.price - product?.saleprice) / product?.price * 100)}%</b></div>
-          <hr />
+          <div className='detail-line' />
           <Dropdown size="sm">
             <h>색상</h>
             <Dropdown.Toggle variant="none" id="dropdown-basic">
@@ -70,7 +70,7 @@ const ProductDetail = () => {
         <Container>
           <Row className='product-detail-ex'>DETAIL</Row>
           <Row>
-            <img src="http://product-image.wconcept.co.kr/images/upload/board/301628486/2023022021484496.jpg" />
+            <img src={product?.detail} />
           </Row>
         </Container>
 

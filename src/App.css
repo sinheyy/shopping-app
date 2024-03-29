@@ -299,12 +299,12 @@
 }
 
 .detail-product-brand {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 5px;
 }
 
 .detail-product-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 5px;
 }
 
@@ -387,6 +387,11 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    padding: 5px;
+}
+
+.detail-line {
+    border-bottom: 2px solid black;
     margin-top: 15px;
     margin-bottom: 15px;
 }
