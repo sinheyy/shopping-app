@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    margin-bottom: 100px;
-}
-
 .login-button {
     display: flex;
     justify-content: flex-end;
@@ -46,11 +42,11 @@ html {
     justify-content: center;
 }
 
-.mobile-logo{
-    height:4rem;
+.mobile-logo {
+    height: 4rem;
 }
 
-.mobile-search-box{
+.mobile-search-box {
     width: 15rem;
     height: 3rem;
     margin: 0px;
@@ -61,7 +57,7 @@ html {
     align-items: center;
 }
 
-.mobile-search-box input{
+.mobile-search-box input {
     outline: none;
     border: none;
     font-size: 1.2rem;
@@ -261,6 +257,41 @@ html {
 .product-img {
     display: flex;
     justify-content: flex-end;
+}
+
+.footer {
+    background-color: white;
+    color: #9C9E9C;
+    margin-top: 100px;
+
+}
+
+.footer ul {
+    background-color: #848484;
+    font-size: 1rem;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GmarketSansMedium";
+}
+
+.footer ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer div {
+    font-family: "SUIT-Regular";
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
 }
 
 /* 모바일 css 지정 */

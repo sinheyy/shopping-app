@@ -7,6 +7,7 @@ import Navbar from './component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from "react";
 import PrivateRoute from './route/PrivateRoute';
+import Footer from './component/Footer';
 
 // steps
 // 1. 전체 상품 페이지, 로그인, 상품 상세 페이지
@@ -35,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />} />
         <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} Component={ProductDetail} />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
