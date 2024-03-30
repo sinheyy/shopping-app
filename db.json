@@ -268,27 +268,6 @@
         },
         {
             "id": 13,
-            "brand": "CHI",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/46/302151646_IT24072.jpg",
-            "title": "비건 핸드크림 50ml",
-            "price": 15000,
-            "saleprice": 15000,
-            "choice": true,
-            "new": false,
-            "size": [
-                "향 선택_01. 대나무",
-                "향 선택_02. 사찰",
-                "향 선택_03. 쑥",
-                "향 선택_04. 화원",
-                "향 선택_05. 수묵"
-            ],
-            "color": [
-                "one"
-            ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/302151646/2023112414343186.jpg"
-        },
-        {
-            "id": 14,
             "brand": "maatila",
             "img": "https://product-image.wconcept.co.kr/productimg/image/img0/69/305762069_PA34599.jpg",
             "title": "리본케이크 시어서커 여름 차렵이불세트(SS/Q/K) 4종",
