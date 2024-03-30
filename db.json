@@ -21,7 +21,8 @@
                 "Pattern Brown",
                 "Organ Brown"
             ],
-            "detail": "https://atlm1224.cafe24.com/web/upload/wconcept/panier_petit_img_2402.jpg"
+            "detail": "https://atlm1224.cafe24.com/web/upload/wconcept/panier_petit_img_2402.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 1,
@@ -41,7 +42,8 @@
                 "Silver",
                 "Gold Pated"
             ],
-            "detail": "https://tatiana.speedgabia.com/public_html/img/detail/23SS/EC3000_1_1.jpg"
+            "detail": "https://tatiana.speedgabia.com/public_html/img/detail/23SS/EC3000_1_1.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 2,
@@ -59,7 +61,8 @@
                 "Silver",
                 "Gold Pated"
             ],
-            "detail": "https://tatiana.speedgabia.com/public_html/img/detail/22SS/NZ1099_1.jpg"
+            "detail": "https://tatiana.speedgabia.com/public_html/img/detail/22SS/NZ1099_1.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 3,
@@ -79,7 +82,8 @@
                 "OATMEAL",
                 "GRAY"
             ],
-            "detail": "https://www.mongdolstore.com/web/upload/product/23FW/MDKT063_1_SET.jpg"
+            "detail": "https://www.mongdolstore.com/web/upload/product/23FW/MDKT063_1_SET.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 4,
@@ -97,7 +101,8 @@
             "color": [
                 "WHITE"
             ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/302212213/2023033118121882.jpg"
+            "detail": "http://product-image.wconcept.co.kr/images/upload/board/302212213/2023033118121882.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 5,
@@ -120,7 +125,8 @@
                 "Black",
                 "Charcoal"
             ],
-            "detail": "https://siyazu.co.kr/web/product/22FW/SIYAZU_22FW_topimage.jpg"
+            "detail": "https://siyazu.co.kr/web/product/22FW/SIYAZU_22FW_topimage.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 6,
@@ -141,7 +147,8 @@
                 "BLACK",
                 "IVORY"
             ],
-            "detail": "https://lookast.cafe24.com/sabangnet/2022/4.22FW.1/01/1OUTER/22FWJK009/1-21FWMJK002-IV.jpg"
+            "detail": "https://lookast.cafe24.com/sabangnet/2022/4.22FW.1/01/1OUTER/22FWJK009/1-21FWMJK002-IV.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 7,
@@ -163,7 +170,8 @@
                 "Blue",
                 "Black"
             ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/303195102/2023072011065770.jpg"
+            "detail": "http://product-image.wconcept.co.kr/images/upload/board/303195102/2023072011065770.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 8,
@@ -185,7 +193,8 @@
                 "DEEP BEIGE",
                 "DEEP PINK"
             ],
-            "detail": "https://ssucc2ss.speedgabia.com/2021/03/9020_1.jpg"
+            "detail": "https://ssucc2ss.speedgabia.com/2021/03/9020_1.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 9,
@@ -204,7 +213,8 @@
                 "Tan Brown",
                 "Light Beige"
             ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/305698946/2024021614423774.jpg"
+            "detail": "http://product-image.wconcept.co.kr/images/upload/board/305698946/2024021614423774.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 10,
@@ -224,7 +234,8 @@
                 "NOIR",
                 "ROSE"
             ],
-            "detail": "https://img.bstyle.kr/loeuvre/detail/24SS.jpg"
+            "detail": "https://img.bstyle.kr/loeuvre/detail/24SS.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 11,
@@ -247,7 +258,8 @@
                 "Blue",
                 "Cherry Blossom"
             ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/301628486/2023022021484496.jpg"
+            "detail": "http://product-image.wconcept.co.kr/images/upload/board/301628486/2023022021484496.jpg",
+            "field": "WOMEN"
         },
         {
             "id": 12,
@@ -271,7 +283,8 @@
                 "03. 레몬딜버터",
                 "04. 녹차치즈샌드"
             ],
-            "detail": "http://maatila.img18.kr/product_uproad/bedding/24bd164_de0_intro_m_02.jpg"
+            "detail": "http://maatila.img18.kr/product_uproad/bedding/24bd164_de0_intro_m_02.jpg",
+            "field": "LIFE"
         }
     ]
 }
