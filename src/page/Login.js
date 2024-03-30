@@ -26,20 +26,20 @@ const Login = ({ setAuthenticate }) => {
           <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
             <Form.Label column sm="4">이메일 아이디</Form.Label>
             <Col sm="8">
-              <Form.Control className="form-input" type="email" placeholder="이메일 아이디를 @까지 정확하게 입력하세요"></Form.Control>
+              <Form.Control className="form-input" type="email" placeholder="이메일 아이디를 @까지 정확하게 입력하세요" required ></Form.Control>
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} className="mb-3" controlId="formBasicPassword">
             <Form.Label column sm="4">비밀번호</Form.Label>
             <Col sm="8">
-              <Form.Control className="form-input" type="password" placeholder="비밀번호를 입력해주세요" />
+              <Form.Control className="form-input" type="password" placeholder="비밀번호를 입력해주세요" required />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} className="mb-3" controlId="formBasicCheckbox">
             <Form.Check column sm="6" className='login-check' type="checkbox" label="이메일 아이디 저장" />
-            <Col sm = "6" className='login-find'>
+            <Col sm="6" className='login-find'>
               아이디 찾기 | 비밀번호 찾기
             </Col>
           </Form.Group>
