@@ -157,42 +157,6 @@
     font-family: 'SUIT-Regular';
 }
 
-.login-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1.2rem;
-    font-family: 'GmarketSansMedium';
-}
-
-.login-area div {
-    margin: 10px;
-}
-
-.login-area input {
-    background-color: #E6E6E6;
-    width: 25rem;
-    border: none;
-    height: 2.2rem;
-    font-family: 'SUIT-Regular';
-    margin-left: 15px;
-}
-
-.id-text {
-    letter-spacing: 4px;
-}
-
-.login-area input:active,
-.login-area input:focus {
-    background-color: white;
-    border: 1px solid black;
-}
-
-.login-area input:hover {
-    outline: none;
-}
-
 .line {
     border-bottom: 3px solid black;
     margin-left: 200px;
@@ -201,15 +165,35 @@
     margin-bottom: 10px;
 }
 
-.login-click {
-    width: 10rem;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    font-size: 1.2rem;
+#login-area {
     font-family: 'GmarketSansMedium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-form {
+        width: 40rem;
+    }
+
+    .form-input {
+        background-color: #F2F2F2;
+        border-radius: 0px;
+    }
+
+    .login-find {
+        color: #575757;
+    }
+
+    .login-click {
+        width: 10rem;
+        border: none;
+        border-radius: 0px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: 'GmarketSansMedium';
+    }
 }
 
 .login-click:hover {
@@ -395,6 +379,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 
 @font-face {
     font-family: "YeojuCeramic";

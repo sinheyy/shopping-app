@@ -1,25 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Button, Form, Row, Col, Container } from 'react-bootstrap';
 
 const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   // 로그인 클릭시, authenticate -> true & 메인 페이지로 이동
-  const loginUser = () => {
+  const loginUser = (event) => {
     console.log("login user function issue");
+    event.preventDefault();
+
     setAuthenticate(true);
     navigate("/");
+
   }
 
   return (
     <div>
       <div className='login-text'>LOGIN</div>
       <div className='line' />
-      <div className='login-area'>
-        <div className='id-text'>아이디 <input placeholder='이메일 아이디를 @까지 정확하게 입력하세요' /></div>
-        <div>비밀번호 <input type="password" placeholder='비밀번호를 입력해주세요' /></div>
-        <button className='login-click' onClick={loginUser}>로그인</button>
-      </div>
+      <Container id='login-area'>
+        <Form className='login-form' onSubmit={(event) => loginUser(event)}>
+          <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
+            <Form.Label column sm="4">이메일 아이디</Form.Label>
+            <Col sm="8">
+              <Form.Control className="form-input" type="email" placeholder="이메일 아이디를 @까지 정확하게 입력하세요"></Form.Control>
+            </Col>
+          </Form.Group>
+
+          <Form.Group as={Row} className="mb-3" controlId="formBasicPassword">
+            <Form.Label column sm="4">비밀번호</Form.Label>
+            <Col sm="8">
+              <Form.Control className="form-input" type="password" placeholder="비밀번호를 입력해주세요" />
+            </Col>
+          </Form.Group>
+
+          <div className='login-find'>
+            아이디 찾기 | 비밀번호 찾기
+          </div>
+
+          <Form.Group as={Row}>
+            <Col sm="4"></Col>
+            <Col sm="4">
+              <Button className='login-click' type="submit">
+                로그인
+              </Button>
+            </Col>
+            <Col sm="4"></Col>
+
+          </Form.Group>
+
+        </Form>
+      </Container>
     </div>
   )
 }
