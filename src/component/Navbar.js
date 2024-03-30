@@ -29,7 +29,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
     }
 
     // 메뉴 클릭 시 이동
-    const goToMenu=(event)=>{
+    const goToMenu = (event) => {
         let field = event.target.textContent;
         navigate(`/?field=${field}`);
     }
@@ -98,7 +98,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                         <div className='menu-area'>
                             <ul className='menu-list'>
                                 {menuList.map((menu) => (
-                                    <li onClick={(event)=>goToMenu(event)}>{menu}</li>
+                                    <li onClick={(event) => goToMenu(event)}>{menu}</li>
                                 ))}
                             </ul>
                         </div>

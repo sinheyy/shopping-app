@@ -47,9 +47,9 @@
         },
         {
             "id": 2,
-            "brand": "TATIANA",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/41/301085141_YR92430.jpg",
-            "title": "Petit oval pearl necklace_NZ1099",
+            "brand": "AMUSE",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/64/304191464_XA36677.jpg",
+            "title": "립 앤 치크 헬시 밤 (5종 택1)",
             "price": 42000,
             "saleprice": 34314,
             "choice": true,
@@ -58,11 +58,14 @@
                 "one"
             ],
             "color": [
-                "Silver",
-                "Gold Pated"
+                "01 BOKSOONGA BALM",
+                "02 MANGO BALM",
+                "03 STRAWBERRY BALM",
+                "04 GRAPE BALM",
+                "05 FIG BALM"
             ],
-            "detail": "https://tatiana.speedgabia.com/public_html/img/detail/22SS/NZ1099_1.jpg",
-            "field": "WOMEN"
+            "detail": "http://product-image.wconcept.co.kr/images/upload/board/304191464/2023102317002459.jpg",
+            "field": "BEAUTY"
         },
         {
             "id": 3,
@@ -106,27 +109,21 @@
         },
         {
             "id": 5,
-            "brand": "Siyazu",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/86/301287086_MW98402.jpg",
-            "title": "SI PT 7023 Long Wide Slacks_4colors",
-            "price": 89000,
-            "saleprice": 74404,
-            "choice": false,
+            "brand": "GREYGROUND",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/86/302327286_VS91019.jpg",
+            "title": "메디나 퍼퓸 향수 50ml",
+            "price": 74000,
+            "saleprice": 59000,
+            "choice": true,
             "new": false,
             "size": [
-                "XS",
-                "S",
-                "M",
-                "L"
+                "one"
             ],
             "color": [
-                "Dark navy",
-                "Sand beige",
-                "Black",
-                "Charcoal"
+                "one"
             ],
-            "detail": "https://siyazu.co.kr/web/product/22FW/SIYAZU_22FW_topimage.jpg",
-            "field": "WOMEN"
+            "detail": "https://dayjsrwbk0r7f.cloudfront.net/creative/brand-mall/greyground/medina.jpg",
+            "field": "BEAUTY"
         },
         {
             "id": 6,
@@ -152,26 +149,23 @@
         },
         {
             "id": 7,
-            "brand": "FLOWOOM",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/02/303195102_PP71232.jpg",
-            "title": "Cocktail Heart Neck Dress(3color)",
+            "brand": "Hooves",
+            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/92/305701492_XR19168.jpg",
+            "title": "플러 반 집업 카라 스웻 [크림]",
             "price": 328000,
             "saleprice": 293000,
             "choice": false,
             "new": true,
             "size": [
-                "XS",
-                "S",
                 "M",
-                "L"
+                "L",
+                "XL"
             ],
             "color": [
-                "Cream",
-                "Blue",
-                "Black"
+                "one"
             ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/303195102/2023072011065770.jpg",
-            "field": "WOMEN"
+            "detail": "https://image.musinsa.com/images/prd_img/2024021312205600000073474.jpg",
+            "field": "MEN"
         },
         {
             "id": 8,

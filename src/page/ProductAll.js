@@ -7,15 +7,29 @@ const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
 
-  // 
+
   const getProducts = async () => {
     let searchQuery = query.get('q') || "";   // q로 시작하는 쿼리를 가져다가 searchQuery에 넣음
-    console.log("query : ", searchQuery);
+    let fieldQuery = query.get('field') || "";
+    //console.log("query : ", searchQuery);
 
     let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
-    setProductList(data);
+
+    if (fieldQuery == "") {
+      setProductList(data);
+    }
+    else {
+      let fieldProducts = [];
+      data.map((item) => {
+        if (item.field == fieldQuery) {
+          fieldProducts.push(item);
+          //console.log("item", item);
+        }
+      });
+      setProductList(fieldProducts);
+    }
   }
 
 
