@@ -178,6 +178,17 @@
         border-radius: 0px;
     }
 
+
+    .login-check input {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .login-check input:checked {
+        background-color: black;
+    }
+
     .login-find {
         color: #575757;
     }

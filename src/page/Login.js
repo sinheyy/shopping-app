@@ -37,9 +37,12 @@ const Login = ({ setAuthenticate }) => {
             </Col>
           </Form.Group>
 
-          <div className='login-find'>
-            아이디 찾기 | 비밀번호 찾기
-          </div>
+          <Form.Group as={Row} className="mb-3" controlId="formBasicCheckbox">
+            <Form.Check column sm="6" className='login-check' type="checkbox" label="이메일 아이디 저장" />
+            <Col sm = "6" className='login-find'>
+              아이디 찾기 | 비밀번호 찾기
+            </Col>
+          </Form.Group>
 
           <Form.Group as={Row}>
             <Col sm="4"></Col>
