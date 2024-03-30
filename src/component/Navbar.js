@@ -115,7 +115,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                         <div>
                             <ul className='mobile-menu-list'>
                                 {menuList.map((menu) => (
-                                    <li>{menu}</li>
+                                    <li onClick={(event) => goToMenu(event)}>{menu}</li>
                                 ))}
                             </ul>
                         </div>
