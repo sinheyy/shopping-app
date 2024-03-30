@@ -289,27 +289,6 @@
         },
         {
             "id": 14,
-            "brand": "AMUSE",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/64/304191464_XA36677.jpg",
-            "title": "립 앤 치크 헬시 밤 (5종 택1)",
-            "price": 17000,
-            "saleprice": 15300,
-            "choice": true,
-            "new": true,
-            "size": [
-                "one"
-            ],
-            "color": [
-                "01 BOKSOONGA BALM",
-                "02 MANGO BALM",
-                "03 STRAWBERRY BALM",
-                "04 GRAPE BALM",
-                "05 FIG BALM"
-            ],
-            "detail": "http://product-image.wconcept.co.kr/images/upload/board/304191464/2023102317002459.jpg"
-        },
-        {
-            "id": 15,
             "brand": "maatila",
             "img": "https://product-image.wconcept.co.kr/productimg/image/img0/69/305762069_PA34599.jpg",
             "title": "리본케이크 시어서커 여름 차렵이불세트(SS/Q/K) 4종",
