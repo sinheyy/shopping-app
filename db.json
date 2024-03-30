@@ -228,23 +228,6 @@
         },
         {
             "id": 11,
-            "brand": "BLUE ELEPHANT",
-            "img": "https://product-image.wconcept.co.kr/productimg/image/img0/18/302325918_FG31898.jpg",
-            "title": "CREA crystal",
-            "price": 138000,
-            "saleprice": 36432,
-            "choice": false,
-            "new": true,
-            "size": [
-                "FREE"
-            ],
-            "color": [
-                "FREE"
-            ],
-            "detail": "https://bluelephant.cafe24.com/be/common/intro_black.jpg"
-        },
-        {
-            "id": 12,
             "brand": "ALLINCOMPLETE",
             "img": "https://product-image.wconcept.co.kr/productimg/image/img0/86/301628486_OY21856.jpg",
             "title": "[단독] Round Logo Ball Cap (10 Colors)",
@@ -267,7 +250,7 @@
             "detail": "http://product-image.wconcept.co.kr/images/upload/board/301628486/2023022021484496.jpg"
         },
         {
-            "id": 13,
+            "id": 12,
             "brand": "maatila",
             "img": "https://product-image.wconcept.co.kr/productimg/image/img0/69/305762069_PA34599.jpg",
             "title": "리본케이크 시어서커 여름 차렵이불세트(SS/Q/K) 4종",
