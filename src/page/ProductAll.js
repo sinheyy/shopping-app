@@ -2,34 +2,23 @@ import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
+import { productAction } from "../redux/actions/productAction";
+import { useDispatch, useSelector } from 'react-redux';
 
 const ProductAll = () => {
-  const [productList, setProductList] = useState([]);
+  const productList = useSelector(state => state.product.productList);
   const [query, setQuery] = useSearchParams();
+  const dispatch = useDispatch();
 
 
-  const getProducts = async () => {
+  const getProducts = () => {
+    console.log("product list!!!!", productList);
     let searchQuery = query.get('q') || "";   // q로 시작하는 쿼리를 가져다가 searchQuery에 넣음
     let fieldQuery = query.get('field') || "";
     //console.log("query : ", searchQuery);
 
-    let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products?q=${searchQuery}`;
-    let response = await fetch(url);
-    let data = await response.json();
-
-    if (fieldQuery == "") {
-      setProductList(data);
-    }
-    else {
-      let fieldProducts = [];
-      data.map((item) => {
-        if (item.field == fieldQuery) {
-          fieldProducts.push(item);
-          //console.log("item", item);
-        }
-      });
-      setProductList(fieldProducts);
-    }
+    // 미들웨어 부르기
+    dispatch(productAction.getProducts(searchQuery, fieldQuery));
   }
 
 
@@ -43,7 +32,7 @@ const ProductAll = () => {
     <div>
       <Container>
         <Row>
-          {productList.map((menu) => (
+          {productList?.map((menu) => (
             <Col lg={3}><ProductCard item={menu} /></Col>
           ))}
         </Row>

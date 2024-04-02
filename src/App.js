@@ -21,20 +21,13 @@ import Footer from './component/Footer';
 // 6. 로그인 하면 로그아웃이 보이고, 로그아웃을 하면 로그인이 보임
 // 7. 상품을 검색할 수 있음
 function App() {
-  const [authenticate, setAuthenticate] = useState(false);  // true - 로그인, false - 로그인 안 됨
-
-  // authenticate 값이 변할 때마다 출력
-  useEffect(() => {
-    console.log("auth : ", authenticate);
-  }, [authenticate]);
-
   return (
     <div>
-      <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
+      <Navbar />
       <Routes>
         <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />} />
-        <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} Component={ProductDetail} />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/product/:id" element={<PrivateRoute Component={ProductDetail} />} />
       </Routes>
       <Footer />
     </div>

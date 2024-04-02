@@ -4,12 +4,16 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faSearch, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { authenticateAction } from '../redux/actions/authenticateAction'
 
-const Navbar = ({ authenticate, setAuthenticate }) => {
+const Navbar = () => {
     const menuList = ['WOMEN', 'MEN', 'BEAUTY', 'LIFE', 'BEST', 'SALE', 'NEW', 'EXCLUSIVE', 'EVENT'];
     const navigate = useNavigate();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [menuOpen, setMenuOpen] = useState(false);
+    const authenticate = useSelector((state)=>state.auth.authenticate);
+    const dispatch = useDispatch();
 
     // 로그인으로 이동
     const goToLogin = () => {
@@ -51,7 +55,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
         <div>
             <div>
                 {authenticate ?
-                    (<div className='login-button' onClick={() => setAuthenticate(false)}>
+                    (<div className='login-button' onClick={() => dispatch({ type: "LOGOUT_SUCCESS"})}>
                         <FontAwesomeIcon icon={faUser} />
                         <div>로그아웃</div>
                     </div>)

@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Button, Form, Row, Col, Container } from 'react-bootstrap';
+import { authenticateAction } from '../redux/actions/authenticateAction';
+import { useDispatch } from 'react-redux';
 
 const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,7 +16,7 @@ const Login = ({ setAuthenticate }) => {
     console.log("login user function issue");
     event.preventDefault();
 
-    setAuthenticate(true);
+    dispatch(authenticateAction.login(email, password))
     navigate("/");
 
   }
@@ -26,14 +30,14 @@ const Login = ({ setAuthenticate }) => {
           <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
             <Form.Label column sm="4">이메일 아이디</Form.Label>
             <Col sm="8">
-              <Form.Control className="form-input" type="email" placeholder="이메일 아이디를 @까지 정확하게 입력하세요" required ></Form.Control>
+              <Form.Control className="form-input" type="email" placeholder="이메일 아이디를 @까지 정확하게 입력하세요" onChange={(event)=>setEmail(event.target.value)} required ></Form.Control>
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} className="mb-3" controlId="formBasicPassword">
             <Form.Label column sm="4">비밀번호</Form.Label>
             <Col sm="8">
-              <Form.Control className="form-input" type="password" placeholder="비밀번호를 입력해주세요" required />
+              <Form.Control className="form-input" type="password" placeholder="비밀번호를 입력해주세요" onChange={(event)=>setPassword(event.target.value)} required />
             </Col>
           </Form.Group>
 

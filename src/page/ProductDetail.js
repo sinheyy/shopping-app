@@ -2,22 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useDispatch } from 'react-redux';
+import { productAction } from '../redux/actions/productAction';
+import { useSelector } from 'react-redux';
 
 const ProductDetail = () => {
+  const product = useSelector(state => state.product.selected);
   let { id } = useParams();   // parameter를 읽어올 수 있음
-  const [product, setProduct] = useState(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     getProductDetail()
   }, [])
 
-  const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products/${id}`;
-    let response = await fetch(url);
-    let data = await response.json();
-
-    console.log(data);
-    setProduct(data);
+  const getProductDetail = () => {
+    dispatch(productAction.getProductDetail(id));
   }
 
   const pickIsTrue = () => {
