@@ -1,6 +1,7 @@
 # Shopping App
 Do you like shopping?    
-link : (https://shopconcept.netlify.app/)
+link : (https://shopconcept.netlify.app/)  
++ update : redux, redux-thunk 사용(04/03/24)
 <br/>
 <br/>
 ## 1) 시작 화면
