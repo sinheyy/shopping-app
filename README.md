@@ -2,12 +2,13 @@
 Do you like shopping?    
 link : (https://shopconcept.netlify.app/)  
 + update : redux, redux-thunk 사용(04/03/24)
++ update : redux-toolkit 사용, createAsyncThunk(04/03/24)
 <br/>
 <br/>
 ## 1) 시작 화면
 ![image](https://github.com/sinheyy/shopping-app/assets/163747140/eef73fd2-8046-4a39-af59-9b5880dbd7a9)
 
-## 2) 시작 화면(상품 페이지) - 메뉴 클릭 시 해당 하는 상품들만 보여줌
+## 2) 시작 화면(상품 페이지)
 ![image](https://github.com/sinheyy/shopping-app/assets/163747140/40167c71-f97b-4efa-b1ff-a72cc327f185)
 
 ## 3) 로그인 페이지 - 로그인 시에는 로그아웃으로 텍스트 변경(로그인 페이지 수정 03/30/24)
