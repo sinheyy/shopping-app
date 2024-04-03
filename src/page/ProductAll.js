@@ -4,12 +4,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 import { productAction } from "../redux/actions/productAction";
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from '../redux/reducers/prooductSlice';
 
 const ProductAll = () => {
   const productList = useSelector(state => state.product.productList);
   const [query, setQuery] = useSearchParams();
   const dispatch = useDispatch();
-
 
   const getProducts = () => {
     console.log("product list!!!!", productList);
@@ -18,7 +18,7 @@ const ProductAll = () => {
     //console.log("query : ", searchQuery);
 
     // 미들웨어 부르기
-    dispatch(productAction.getProducts(searchQuery, fieldQuery));
+    dispatch(fetchProducts(searchQuery));
   }
 
 
