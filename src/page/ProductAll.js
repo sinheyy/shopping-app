@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import ProductCard from '../component/ProductCard';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/reducers/productSlice';
+import ClipLoader from "react-spinners/ClipLoader";
 
 const ProductAll = () => {
   const productList = useSelector(state => state.product.productList);
+  const loading = useSelector(state => state.product.isLoading);
   const [query, setQuery] = useSearchParams();
   const dispatch = useDispatch();
 
@@ -31,9 +33,10 @@ const ProductAll = () => {
     <div>
       <Container>
         <Row>
-          {productList?.map((menu) => (
-            <Col lg={3}><ProductCard item={menu} /></Col>
-          ))}
+          {loading ? (<div className='loading'><ClipLoader color="#FB6D33" loading={loading} size={150} /></div>) :
+            (productList?.map((menu) => (
+              <Col lg={3}><ProductCard item={menu} /></Col>
+            )))}
         </Row>
       </Container>
     </div>

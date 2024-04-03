@@ -10,38 +10,37 @@ let initialState = {
 export const fetchProducts = createAsyncThunk(
     'product/fetchAll',
     async (searchQuery, fieldQuery, thunkApi) => {
+
         try {
             let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products?q=${searchQuery}`;
             let response = await fetch(url);
-
             return await response.json();
+            /*
+            if (fieldQuery == "") {
+                return await response.json();
+            }
+            else {
+                let url2 = `https://my-json-server.typicode.com/sinheyy/shopping-app/products?q=${searchQuery}`;
+                let response = await fetch(url2);
+                let data2 = await response.json();
+
+
+                let fieldProducts = [];
+                data2?.map((item) => {
+                    if (item.field == fieldQuery) {
+                        fieldProducts.push(item);
+                    }
+                });
+                return fieldProducts;
+            }
+            */
+
         } catch (error) {
             thunkApi.rejectedWithValue(error.message);
         }
 
 
-        /*
-        if (fieldQuery == "") {
-            //console.log("nav bar none");
-            // dispatch({ type: "GET_PRODUCT_SUCCESS", payload: { data } })
-            dispatch(productActions.getAllProducts({data}));
-        }
-        else {
-            //console.log("query", fieldQuery);
-            //console.log(data);
-            let fieldProducts = [];
-            data?.map((item) => {
-                if (item.field == fieldQuery) {
-                    //console.log("item", item);
-                    fieldProducts.push(item);
-                    //console.log("item", item);
-                }
-            });
-            //console.log("nav bar clicked");
-            //console.log("fieldProducts", fieldProducts);
-            dispatch({ type: "GET_PRODUCT_FIELD_SUCCESS", payload: { fieldProducts } })
-        }
-        */
+
     }
 );
 
