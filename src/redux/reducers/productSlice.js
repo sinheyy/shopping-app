@@ -8,7 +8,7 @@ let initialState = {
 }
 
 export const fetchProducts = createAsyncThunk(
-'product/fetchAll',
+    'product/fetchAll',
     async (searchQuery, fieldQuery, thunkApi) => {
         try {
             let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products?q=${searchQuery}`;
@@ -45,6 +45,20 @@ export const fetchProducts = createAsyncThunk(
     }
 );
 
+export const fetchProductDetail = createAsyncThunk(
+    'product/fetchDetail',
+    async (id, thunkApi) => {
+        try {
+            let url = `https://my-json-server.typicode.com/sinheyy/shopping-app/products/${id}`;
+            let response = await fetch(url);
+
+            return await response.json();
+        } catch (error) {
+            thunkApi.rejectedWithValue(error.message);
+        }
+    }
+);
+
 // function Slice(state = initialState, action) {
 //     let { type, payload } = action;
 //     switch (type) {
@@ -66,10 +80,6 @@ const productSlice = createSlice({
     name: "product",
     initialState,
     reducers: {
-
-        getSingleProduct(state, action) {
-            state.selected = action.payload.data;
-        }
     },
     extraReducers: (builder) => {
         builder.addCase(fetchProducts.pending, (state) => {
@@ -81,6 +91,18 @@ const productSlice = createSlice({
                 state.productList = action.payload;
             })
             .addCase(fetchProducts.rejected, (state, action) => {
+                state.isLoading = false
+                state.error = action.payload
+            });
+        builder.addCase(fetchProductDetail.pending, (state) => {
+            state.isLoading = true
+        })
+            .addCase(fetchProductDetail.fulfilled, (state, action) => {
+                state.isLoading = false
+                console.log(action.payload);
+                state.selected = action.payload;
+            })
+            .addCase(fetchProductDetail.rejected, (state, action) => {
                 state.isLoading = false
                 state.error = action.payload
             })

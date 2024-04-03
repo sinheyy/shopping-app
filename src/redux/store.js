@@ -3,7 +3,7 @@ import { thunk } from 'redux-thunk'
 import rootReducer from "./reducers";
 import { composeWithDevTools } from '@redux-devtools/extension';
 import { configureStore } from "@reduxjs/toolkit";
-import Slice from "./reducers/prooductSlice";
+import Slice from "./reducers/productSlice";
 import authenticateReducer from "./reducers/authenticateReducer"
 
 // let store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));

@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useDispatch } from 'react-redux';
-import { productAction } from '../redux/actions/productAction';
 import { useSelector } from 'react-redux';
+import { fetchProductDetail } from '../redux/reducers/productSlice';
 
 const ProductDetail = () => {
   const product = useSelector(state => state.product.selected);
@@ -16,7 +16,7 @@ const ProductDetail = () => {
   }, [])
 
   const getProductDetail = () => {
-    dispatch(productAction.getProductDetail(id));
+    dispatch(fetchProductDetail(id));
   }
 
   const pickIsTrue = () => {
