@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Button, Form, Row, Col, Container } from 'react-bootstrap';
-import { authenticateAction } from '../redux/actions/authenticateAction';
 import { useDispatch } from 'react-redux';
+import { authenticateActions } from '../redux/reducers/authenticateSlice';
 
 const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Login = ({ setAuthenticate }) => {
     console.log("login user function issue");
     event.preventDefault();
 
-    dispatch(authenticateAction.login(email, password))
+    dispatch(authenticateActions.login(email, password))
     navigate("/");
 
   }
